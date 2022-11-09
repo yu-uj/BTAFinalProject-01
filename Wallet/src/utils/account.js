@@ -1,4 +1,4 @@
-import Neon, { wallet, CONST, rpc } from "@cityofzion/neon-js";
+import Neon, { wallet, CONST, rpc } from '@cityofzion/neon-js';
 import axios from 'axios';
 
 const url = process.env.REACT_APP_PRIVATE_RPC_URL;

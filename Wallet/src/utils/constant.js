@@ -14,7 +14,7 @@
 //     accounts: [],
 //     extra: null,
 //   }
-  
+
 //   export const N3_DEFAULT_WALLET = {
 //     name: 'n3UserWallet',
 //     chain: 'neo3',
@@ -28,9 +28,8 @@
 //     accounts: [],
 //     extra: null,
 //   }
-  
+
 //   export const DEFAULT_CURRENCY_CODE = 'usd'
-  
 
 // export const DEFAULT_CHAIN = 'neo3:testnet'
 // export const DEFAULT_NETWORKS = {

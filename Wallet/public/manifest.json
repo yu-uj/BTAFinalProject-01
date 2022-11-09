@@ -2,11 +2,15 @@
   "manifest_version": 3,
   "name": "Neo Wallet",
   "description": "Neo Wallet Extension",
-  "version": "1.0.0",
+  "version": "0.1.0",
+  "background": {
+    "service_worker": "background.js"
+  },
   "icons": {
-    "16": "neologo.png",
-    "48": "neologo.png",
-    "128": "neologo.png"
+    "16": "icons/neologo.png",
+    "32": "icons/neologo.png",
+    "48": "icons/neologo.png",
+    "128": "icons/neologo.png"
   },
   "action": {
     "default_icon": {
@@ -14,8 +18,15 @@
       "48": "neologo.png",
       "128": "neologo.png"
     },
-    "default_popup": "index.html",
+    "default_popup": "popup.html",
     "default_title": "Neo Wallet Extension"
   },
-  "permissions": ["storage"]
+  "permissions": ["storage", "activeTab", "tabs"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "run_at": "document_idle",
+      "js": ["contentScript.js"]
+    }
+  ]
 }

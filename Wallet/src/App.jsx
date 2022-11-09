@@ -11,11 +11,13 @@ import Account from "./components/Account";
 import TokenList from "./components/TokenList";
 import Setting from "./components/Setting";
 import Transfer from "./components/Transfer";
+import MyAccount from "./components/MyAccount";
+import ShowMnemonic from "./components/ShowMnemonic";
 
 const App = () => {
 
   return (
-    <div className="App">
+    <div>
       <BrowserRouter>
         <Navbar />
           <Routes>
@@ -27,6 +29,8 @@ const App = () => {
             <Route path="/tokenlist" element={<TokenList />} />
             <Route path="/setting" element={<Setting />} />
             <Route path="/transfer" element={<Transfer />} />
+            <Route path="/myaccount" element={<MyAccount />} />
+            <Route path="/showmnemonic" element={<ShowMnemonic />} />
          </Routes>
       </BrowserRouter>
     </div>
