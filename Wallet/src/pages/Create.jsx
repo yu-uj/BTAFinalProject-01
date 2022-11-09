@@ -5,20 +5,16 @@ import { Typography, Avatar, Button, CssBaseline, TextField, Grid, Box, Containe
 import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { setPassword } from "../utils/storage.js";
-// import { hashed } from "../utils/api.js";
 
 const theme = createTheme();
 
 const Create = () => {
 	const navigate = useNavigate();
 	const [myPassword, setMyPassword] = useState();
+	
 	useEffect(() => {
 		console.log(myPassword);
-		setPassword(myPassword).then((res) => {
-				navigate(`/showmnemonic`);
-			})
 	}, [myPassword]);
-	
 
   const [isPasswordSame, setIsPasswordSame] = useState(true);
 
@@ -36,7 +32,7 @@ const Create = () => {
 			// setPassword().then((res) => {
 			// 	navigate(`/showmnemonic`);
 			// })
-			
+			navigate(`/showmnemonic`);
 		} else {
 			setIsPasswordSame(false);
 			setMyPassword();

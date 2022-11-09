@@ -22,5 +22,6 @@ export const createWallet = (data) => {
     
     return {'privateKey': userAccount.privateKey,
             'address': userAccount.label,
-            'mnemonic': mnemonicCode};
+            'mnemonic': mnemonicCode
+    };
 }
