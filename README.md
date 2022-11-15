@@ -246,15 +246,9 @@ dBFT는 디지털 신원 기술을 결합하여 합의 노드가 개인 또는 �
         
     - 생성된 계정을 `encryption`하여 `local storage`에 저장
         - `private key`는 사용자가 입력한 `password`를 사용하여 `encryption`된다.
-    
-    - **(구) 로그인 방식 수정 전 계정 생성 / 니모닉 발급**
-        
-        ![image](https://user-images.githubusercontent.com/99964401/201851501-aa68334f-f54e-468e-afce-5369deeb992b.png)
-        
-        ![image](https://user-images.githubusercontent.com/99964401/201851523-b4f085aa-1b01-441d-b5cd-103b1f56f925.png)
         
     
-    ### 로그인 방식 수정 후
+    **[로그인 방식 수정 후]**
     
     ![CreateNeoWallet](https://user-images.githubusercontent.com/99964401/201851915-a7e239b2-a92a-48b3-a5a0-1aa8d1c40456.gif)
 
@@ -262,11 +256,8 @@ dBFT는 디지털 신원 기술을 결합하여 합의 노드가 개인 또는 �
 - **로그인**
     - 사용자가 `password`를 입력하여 로그인
         - 입력된 `password`는 암호화된 `private key`를 `decryption` 하는 데에 사용된다.
-    - **(구) 로그인 방식 수정 전 로그인**
         
-        ![image](https://user-images.githubusercontent.com/99964401/201851628-a77cb61a-f2b6-4b4e-b6d9-14a76699440d.png)
-        
-    ### 로그인 방식 수정 후
+    **[로그인 방식 수정 후]**
     
     ![LoginNeoWallet](https://user-images.githubusercontent.com/99964401/201851945-900e783b-652b-4dbf-8cd9-ef03523406b8.gif)
     
